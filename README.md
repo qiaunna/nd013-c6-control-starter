@@ -124,4 +124,4 @@ PID controller is a model free controller, i.e. it does not use a model of the c
 
       The controller generally has to balance
 
-PID controller has low robust ability when the system encounters to multiple challenges.
+      PID controller has low robust ability when the system encounters to multiple challenges.
