@@ -102,6 +102,20 @@ pip3 install pandas
 pip3 install matplotlib
 ```
 
+![carla](https://user-images.githubusercontent.com/22205974/165790472-5d6ac888-76f9-4f26-89ad-c14ad6253a47.PNG)
+
+PID (proportional integral derivative) controllers use a control loop feedback mechanism to control process variables. Manually tuning parameters by observing the simulated responses, the optimal values were found by trying first the P, then the I and then the D values one by one. In the simulation, the reactions of the vehicle were monitored.
+
+What is the effect of the PID according to the plots, how each part of the PID affects the control command? 
+
+The figure below shows the steering control errors. The oscillations in the timeline, show the vehicle is trying to learn its environment, while trying to avoid obstacles. Part of the errors may be due to latency or other incompatibilities between the controller and simulation. The agent has to acquire new experiences in the environment during which it can update its policy and/or value function. The policy specifies for a state, or to change an action value associated with a state, it has to move to that state, act from it, possibly many times, and experience the consequences of its actions
+
+![carla1](https://user-images.githubusercontent.com/22205974/165791224-0dc94ff0-c9c6-4a8f-99b5-37cb23c2e253.PNG)
+
+The figure below
+
+![carla2](https://user-images.githubusercontent.com/22205974/165791663-4bfab971-a95a-41ed-94be-9d809fc6745e.PNG)
+
 ## Elaborate a critical analysis of the controller.
 
 The questions are answered with justified explanations:
