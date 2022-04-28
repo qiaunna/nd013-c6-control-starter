@@ -106,7 +106,7 @@ pip3 install matplotlib
 
 PID (proportional integral derivative) controllers use a control loop feedback mechanism to control process variables. Manually tuning parameters by observing the simulated responses, the optimal values were found by trying first the P, then the I and then the D values one by one. In the simulation, the reactions of the vehicle were monitored.
 
-What is the effect of the PID according to the plots, how each part of the PID affects the control command? 
+## What is the effect of the PID according to the plots, how each part of the PID affects the control command? 
 
 The figure below shows the steering control errors. The oscillations in the timeline, show the vehicle is trying to learn its environment, while trying to avoid obstacles. Part of the errors may be due to latency or other incompatibilities between the controller and simulation. The agent has to acquire new experiences in the environment during which it can update its policy and/or value function. The policy specifies for a state, or to change an action value associated with a state, it has to move to that state, act from it, possibly many times, and experience the consequences of its actions
 
@@ -120,11 +120,11 @@ The figure below
 
 The questions are answered with justified explanations:
 
-How would you design a way to automatically tune the PID parameters? 
+## How would you design a way to automatically tune the PID parameters? 
 
 Manual tuning starts with setting the integral and derivative values to 0. The proportional is increased until the controller starts to oscillate. Testing and adjusting a PID controller for stability, to achieve adequate reaction times. Autotuning can eliminate the trial and error of the manual tuning approach. Automatic tuning of PID parameters through tuning a control loop or with the Twiddle algorithm. Twiddle is an algorithm that tries to find a good choice of parameters p for an algorithm A that returns an error. When twiddle variable set to true, simulator runs the car with confidents till the maximum steps set initially continue through the twiddle algorithm. After competition of each iteration, simulator reset to initial stage from the start until maximum steps have been achieved.
 
-PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller? Find at least 2 pros and cons for model free versus model based.
+## PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller? Find at least 2 pros and cons for model free versus model based.
 
 ## Pros
       The advantage of PID controller is its feasibility and easy to be implemented.
