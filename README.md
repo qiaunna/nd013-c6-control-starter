@@ -110,15 +110,18 @@ How would you design a way to automatically tune the PID parameters?
 
 Manual tuning starts with setting the integral and derivative values to 0. The proportional is increased until the controller starts to oscillate. Testing and adjusting a PID controller for stability, to achieve adequate reaction times. Autotuning can eliminate the trial and error of the manual tuning approach. Automatic tuning of PID parameters through tuning a control loop or with the Twiddle algorithm. Twiddle is an algorithm that tries to find a good choice of parameters p for an algorithm A that returns an error. When twiddle variable set to true, simulator runs the car with confidents till the maximum steps set initially continue through the twiddle algorithm. After competition of each iteration, simulator reset to initial stage from the start until maximum steps have been achieved.
 
-PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller? Find at least 2 pros and cons for model free versus model based.
 
-Find at least 2 pros and cons for model free versus model based.
+## Pros
+      The advantage of PID controller is its feasibility and easy to be implemented.
 
-Pros
-The advantage of PID controller is its feasibility and easy to be implemented.
-PID gain can be designed just based on the system tracking error
-Best controller to use when the processes can’t be modeled
+      PID gain can be designed just based on the system tracking error.
 
-Cons
-sensitive to parameter variations, can be unstable and the controller generally has to balance
+      Best controller to use when the processes can’t be modeled.
+
+## Cons
+      Sensitive to parameter variations, can be unstable
+
+      The controller generally has to balance
+
 PID controller has low robust ability when the system encounters to multiple challenges.
