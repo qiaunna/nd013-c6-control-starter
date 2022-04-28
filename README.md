@@ -112,7 +112,7 @@ The figure below shows the steering control errors. The oscillations in the time
 
 ![carla1](https://user-images.githubusercontent.com/22205974/165791224-0dc94ff0-c9c6-4a8f-99b5-37cb23c2e253.PNG)
 
-The figure below shows the values in case of the simulation, the reference speed is calculated by the behavior planner. The x axis shows iterations.  Oscillation are clearly visible. 
+The figure below shows the brake output, throttle output, and throttle error. These values reference the speed calculated by the behavior planner. The x axis shows iterations.  Oscillation are clearly visible.  There are parts in the timeline when the car learns the path by trying to avoid obstacle and change lanes. 
 
 ![carla2](https://user-images.githubusercontent.com/22205974/165791663-4bfab971-a95a-41ed-94be-9d809fc6745e.PNG)
 
